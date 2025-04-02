@@ -214,3 +214,64 @@ html, body{
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Ensure profile cards are responsive on all screen sizes */
+.profile-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of profile cards */
+    gap: 20px;
+    justify-content: center; /* Center the cards on larger screens */
+    padding: 10px;
+}
+
+.profile-main-content {
+    flex: 1 1 300px; /* Allow cards to grow and shrink while maintaining a minimum width */
+    max-width: 400px; /* Prevent cards from becoming too wide on large screens */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .profile-main-content {
+        flex: 1 1 90%; /* Take up most of the screen width on smaller screens */
+        max-width: 90%; /* Prevent cards from exceeding the screen width */
+    }
+
+    .profile-main-image {
+        width: 80%; /* Adjust image size for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .profile-main-details {
+        text-align: center; /* Center text for better readability */
+    }
+
+    .start-chat-button {
+        align-self: center; /* Center the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-main-content {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .profile-main-name {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .profile-main-location,
+    .profile-main-description,
+    .profile-main-preferences {
+        font-size: 0.9rem; /* Adjust font size for better fit */
+    }
+
+    .start-chat-button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
