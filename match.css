@@ -1,0 +1,216 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 1rem;
+}
+
+.navbar-brand {
+    color: #333;
+    padding: 5px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-link:hover {
+    color: #a10254;
+    text-decoration: underline;
+}
+
+.filter-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-dropdown {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+}
+
+.filter-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #a10254;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+    background-color: #632475;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toggle-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.toggle-button:hover {
+    background-color: #a10254;
+    color: white;
+}
+
+.toggle-button.active {
+    background-color: #a10254;
+    color: white;
+    border-color: #632475;
+}
+
+.search {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search:focus {
+    border-color: #a10254;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.profile-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.profile-main-content {
+    flex: 0 0 auto; /* Ensure profiles don't shrink and maintain their width */
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-main-image {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-main-details {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-main-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.profile-main-location,
+.profile-main-description,
+.profile-main-preferences {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.start-chat-button {
+    display: block;
+    margin: 16px auto 0;
+    padding: 8px 16px;
+    background-color: #a10254;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+
+.start-chat-button:hover {
+    background-color: #632475;
+}
+
+.profile-card {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px;
+    background-color: white;
+}
+
+.profile-main-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>RoomSync</title>
+</head>
+
+<body>
+       <nav class="navbar">
+        <div class="navbar-brand"><img src="logo.png" alt="" height="60px"></div>
+        <ul class="navbar-menu">
+            <li><a href="/match.html" class="navbar-link">Match</a></li>
+            <li><a href="/main.html" class="navbar-link">Find</a></li>
+            <li><a href="/chat.html" class="navbar-link">Chat</a></li>
+            <li><a href="#" class="navbar-link">Profile</a></li>
+            <li><a href="/index.html" class="navbar-link">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="match-main">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7741.68609315138!2d25.650818485268434!3d60.981621766236486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468e2852318bbe09%3A0x6ee31b271fa51728!2sKeski-Lahti%2C%2015100%20Lahti!5e0!3m2!1sen!2sfi!4v1743076095387!5m2!1sen!2sfi"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="profile-main-card">
+                <div class="profile-main-content">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-main-image">
+                    <div class="profile-main-details">
+                        <h2 class="profile-main-name">John Doe</h2>
+                        <p class="profile-main-location">Location: 123 Main St, Cityville</p>
+                        <p class="profile-main-description">Description: I am a software engineering student who loves coding, hiking, and exploring new places. Looking for a roommate who shares similar interests.</p>
+                        <p class="profile-main-preferences">Roommate Preferences: Non-smoker, quiet, and tidy. Prefer someone who is a student or a working professional.</p>
+                        <button class="start-chat-button" onclick="window.location.href='/chat.html'">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-select">
+            <div class="filter-menu">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by" class="filter-dropdown">
+                    <option value="recent">Most Recent</option>
+                    <option value="name">Name</option>
+                    <option value="location">Location</option>
+                </select>
+                <div class="toggle-buttons">
+                    <button class="toggle-button">LUT</button>
+                    <button class="toggle-button">LAB</button>
+                </div>
+                <input type="text" class="search" placeholder="Search">
+            </div>
+            <h2>Recently registered students</h2>
+            <div class="profile-list">
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <!-- Add more profile cards as needed -->
+            </div>
+            <h2>Matches your profile</h2>
+            <div class="profile-list">
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <!-- Add more profile cards as needed -->
+            </div>
+            <h2>Nearest to your desired place</h2>
+            <div class="profile-list">
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=54321" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=98765" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                        <p class="profile-address">123 Main St, Cityville</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jane Smith</h3>
+                        <p class="profile-address">456 Elm St, Townsville</p>
+                    </div>
+                </div>
+                <!-- Add more profile cards as needed -->
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+
+                button.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

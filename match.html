@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomSync</title>
+    <link rel="stylesheet" href="match.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand"><img src="logo.png" alt="" height="60px"></div>
+        <ul class="navbar-menu">
+            <li><a href="/match.html" class="navbar-link">Match</a></li>
+            <li><a href="/main.html" class="navbar-link">Find</a></li>
+            <li><a href="/chat.html" class="navbar-link">Chat</a></li>
+            <li><a href="#" class="navbar-link">Profile</a></li>
+            <li><a href="/index.html" class="navbar-link">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="filter-menu">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by" class="filter-dropdown">
+            <option value="recent">Most Recent</option>
+            <option value="name">Name</option>
+            <option value="location">Location</option>
+        </select>
+        <div class="toggle-buttons">
+            <button class="toggle-button">LUT</button>
+            <button class="toggle-button">LAB</button>
+        </div>
+        <input type="text" class="search" placeholder="Search">
+    </div>
+    <h2 style="margin-left: 20px;">Your best matches</h2>
+    <div class="profile-list">
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=12345" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Alice Smith</h2>
+                <p class="profile-main-location">Location: 456 Elm St, Townsville</p>
+                <p class="profile-main-description">Description: I am a graphic designer who loves art, photography, and
+                    traveling. Looking for a creative and friendly roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, pet-friendly, and organized. Prefer
+                    someone who enjoys art and design.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=67890" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Bob Johnson</h2>
+                <p class="profile-main-location">Location: 789 Pine St, Metropolis</p>
+                <p class="profile-main-description">Description: I am a fitness enthusiast who enjoys working out, cooking,
+                    and outdoor activities. Looking for a health-conscious roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, active, and clean. Prefer someone who
+                    shares a passion for fitness.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=11223" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Charlie Davis</h2>
+                <p class="profile-main-location">Location: 321 Oak St, Smallville</p>
+                <p class="profile-main-description">Description: I am a book lover and writer who enjoys quiet evenings and
+                    meaningful conversations. Looking for a calm and respectful roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, quiet, and respectful. Prefer someone
+                    who enjoys reading and writing.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=44556" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Dana Lee</h2>
+                <p class="profile-main-location">Location: 654 Maple St, Riverdale</p>
+                <p class="profile-main-description">Description: I am a tech enthusiast who loves gaming, coding, and
+                    exploring new gadgets. Looking for a roommate who shares similar interests.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, tech-savvy, and tidy. Prefer someone
+                    who enjoys gaming and technology.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=55667" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Eve Carter</h2>
+                <p class="profile-main-location">Location: 987 Birch St, Springfield</p>
+                <p class="profile-main-description">Description: I am a chef who loves cooking, experimenting with recipes,
+                    and hosting dinner parties. Looking for a foodie roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, clean, and sociable. Prefer someone who
+                    enjoys cooking and dining together.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=77889" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Frank Miller</h2>
+                <p class="profile-main-location">Location: 123 Cedar St, Gotham</p>
+                <p class="profile-main-description">Description: I am a musician who loves playing guitar, composing music,
+                    and attending concerts. Looking for a music-loving roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, quiet during practice hours, and
+                    respectful. Prefer someone who enjoys music.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=99001" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Grace Wilson</h2>
+                <p class="profile-main-location">Location: 456 Willow St, Star City</p>
+                <p class="profile-main-description">Description: I am a yoga instructor who loves meditation, fitness, and
+                    healthy living. Looking for a wellness-oriented roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, health-conscious, and tidy. Prefer
+                    someone who enjoys yoga and fitness.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+        <div class="profile-main-content">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=22334" alt="Profile Picture"
+                class="profile-main-image">
+            <div class="profile-main-details">
+                <h2 class="profile-main-name">Henry Adams</h2>
+                <p class="profile-main-location">Location: 789 Aspen St, Central City</p>
+                <p class="profile-main-description">Description: I am a photographer who loves capturing moments, exploring
+                    nature, and editing photos. Looking for a creative roommate.</p>
+                <p class="profile-main-preferences">Roommate Preferences: Non-smoker, organized, and artistic. Prefer someone
+                    who enjoys photography and nature.</p>
+                <button class="start-chat-button">Start Chat</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

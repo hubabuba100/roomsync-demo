@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>RoomSync</title>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="navbar-brand"><img src="logo.png" alt="" height="60px"></div>
+        <ul class="navbar-menu">
+            <li><a href="/match.html" class="navbar-link">Match</a></li>
+            <li><a href="/main.html" class="navbar-link">Find</a></li>
+            <li><a href="/chat.html" class="navbar-link">Chat</a></li>
+            <li><a href="#" class="navbar-link">Profile</a></li>
+            <li><a href="/index.html" class="navbar-link">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <ul class="chat-history">
+                <li class="chat-user selected">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-user-img">
+                    <div>
+                        <div>User 1</div>
+                        <div class="chat-last-message">That sounds great!</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=2" alt="User 2" class="chat-user-img">
+                    <div>
+                        <div>User 2</div>
+                        <div class="chat-last-message">Let's plan a call soon.</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=3" alt="User 3" class="chat-user-img">
+                    <div>
+                        <div>User 3</div>
+                        <div class="chat-last-message">I'll think about it.</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=4" alt="User 4" class="chat-user-img">
+                    <div>
+                        <div>User 4</div>
+                        <div class="chat-last-message">No recent messages</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=5" alt="User 5" class="chat-user-img">
+                    <div>
+                        <div>User 5</div>
+                        <div class="chat-last-message">Sounds good to me!</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=6" alt="User 6" class="chat-user-img">
+                    <div>
+                        <div>User 6</div>
+                        <div class="chat-last-message">Let's meet next week.</div>
+                    </div>
+                </li>
+                <li class="chat-user">
+                    <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=7" alt="User 7" class="chat-user-img">
+                    <div>
+                        <div>User 7</div>
+                        <div class="chat-last-message">I'll get back to you.</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-main">
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Hey, have you thought about living together as roommates?
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                I have! I think it could be a great idea. What do you think?
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                I think it would be awesome. We seem to get along well.
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                Totally agree. We should discuss the details, like rent and chores.
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Yes, let's do that. I'll make a list of things to talk about.
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                Great! I'll do the same. We can compare notes.
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Perfect. Do you have any specific preferences for the apartment?
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                I prefer a place with a lot of natural light. What about you?
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Same here! Also, a quiet neighborhood would be ideal.
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                Agreed. Let's look for places that match those criteria.
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Sounds good. I'll start searching online tonight.
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                Awesome. I'll do the same. Let's share our findings tomorrow.
+            </div>
+            <div class="chat-bubble chat-bubble-received">
+                <img src="https://xsgames.co/randomusers/avatar.php?g=pixel&dummy=1" alt="User 1" class="chat-bubble-img">
+                Deal! Looking forward to it.
+            </div>
+            <div class="chat-bubble chat-bubble-sent">
+                Me too. This is going to be great!
+            </div>
+        </div>
+    </div>
+    <div class="chat-input-container">
+        <input type="text" class="chat-input" placeholder="Type a message...">
+        <button class="chat-send-button">Send</button>
+    </div>
+</body>
+</html>
